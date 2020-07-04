@@ -31,12 +31,8 @@ board[index] = first_player
 end
 
 def turn(board)
-  if !valid_move?(board, index)
-    turn(board)
-    puts "Please enter 1-9:"
-    user_input = gets.strip
-    index = input_to_index(user_input)
-  else
-     move(board, index, current_player(board))
-   end
+  puts "Please enter 1-9:"
+  user_input = gets.strip
+  index = input_to_index(user_input)
+
 end

@@ -39,4 +39,5 @@ def turn(board)
   else
     move(board, index, first_player = "X")
   end
+  display_board(board)
 end
